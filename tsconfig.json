@@ -1,0 +1,49 @@
+{
+    /*
+    include: 包含的路径，**代表任意目录，*代表任意文件
+    exclude: 排除的目录，一般情况下不编译，因为有默认值
+    extends：相当于引入文件，比如引入配置
+    files: 直接写文件名 eg: "files": ["type.js", "mytype.js"]
+
+    compilerOptions:
+    */
+    // "include": ["./**/*"],
+    "include": ["./src/*"],
+    "exclude": [],
+    "compilerOptions": {
+        // target 编译的es版本
+        "target": "ES3",
+        // module 使用的模块化版本
+        "module": "es2015",
+        // lib 使用的库， 写代码有提示，比如dom库，一般不动，  ！！！！！注意，给空数组表示什么都没用！！！
+        // "lib": [],
+        // outDir 编译后的文件存放位置
+        "outDir": "./dist",
+        // outFile 合成一个文件，不灵活，不
+        // "outFile": "",
+        // allowJs 是否编译js
+        "allowJs": false,
+        // "checkJs": 检查js是否符合ts规范
+        "checkJs": false,
+        // removeComments：注释是否被编译
+        "removeComments": false,
+        // 不生成编译的js
+        "noEmit": false,
+        // 有错误，不编译
+        "noEmitOnError": true,
+
+        // strict: 所有严格的总开关
+        "strict": false,
+
+        // alwaysStrict: 编译后的文件是否使用严格模式，  有模块代码会自动进入严格模式
+        "alwaysStrict": false,
+        // noImplicitAny: 不准隐式的any   如：let a 则为隐式的any    [ɪmˈplɪsɪt]
+        "noImplicitAny": true,
+        // noImplicitThis: 不允许隐式的this,this类型要明确
+        "noImplicitThis": false,
+        // strictNullChecks: 严格检查空，如获取DOM节点后，直接addEventListener,
+        "strictNullChecks": false
+
+
+    }
+}
